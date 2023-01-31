@@ -1,0 +1,6 @@
+f = open("a.txt",'r')
+# f.write("abc")
+# content = f.read(10)
+content = f.readline()
+print(content)
+f.close()
