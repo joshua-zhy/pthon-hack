@@ -11,8 +11,15 @@ def crawl_douban():
         "start": 0,
         "limit": 20
     }
-    resp = requests.get(url=url,params=params,headers=headers).json()
-    # print(resp)
+    resp = requests.get(url=url,params=params,headers=headers)
+    moive_list = resp.json()
+    
+    for movie in moive_list:
+        for k,v in movie.items():
+            print(k,v) 
+            
+    
+    
     resp.close() #关闭连接
 if __name__ == '__main__':
     crawl_douban()
