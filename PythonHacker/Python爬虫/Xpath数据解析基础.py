@@ -16,12 +16,14 @@
     - //:   表示的是多个层级。可以表示从任意位置开始定位.
     - 属性定位：//div[@class="song"] tag[@attrName="attrValue"]
     - 索引定位: //div[@class="song"]/p[3] 索引是从1开始的。
+                a[@href="title"]
     - 取文本：
         - /text() 获取的是标签中直系的文本内容
         - //text() 标签中非直系的文本内容（所有的文本内容）
 
     -取属性：
         /@attrName ==> img/src
+        /src
 
 
 """
